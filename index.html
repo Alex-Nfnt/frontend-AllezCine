@@ -1,24 +1,126 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Description" content="AllezCine">
-    <meta name="theme-color" content="white">
 
-    <title>AllezCine</title>
+<head>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="AllezCine">
+  <meta name="theme-color" content="white">
 
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- <link rel="manifest" href="./manifest.json"> -->
-  </head>
+  <title>AllezCine</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <body>
+  <!-- <link rel="manifest" href="./manifest.json"> -->
 
-    <script src="script.js"></script>
-  </body>
+
+
+</head>
+
+<body>
+
+  <header>
+
+  </header>
+
+  <container>
+    <div class="form1" id="hide">
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Connecter</button>
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h1>AllezCiné</h1>
+              <p>Connectez-vous</p>
+            </div>
+            <div class="modal-body">
+              <div>
+                <label for="identifiant">Identifiant</label>
+                <input type="text" name="identifiant" placeholder="Entrez votre identifiant">
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input type="text" name="password" placeholder="Entrez votre mot de passe">
+              </div>
+              <div id="checkbox1">
+                <label><input type="checkbox" value="">Rester connecté</label>
+              </div>
+              <div class="liens">
+                <a href="url">Mot de passe oublié?</a>
+                <a href="./index.html">Cancel</a>
+              </div>
+              <div class="bouton">
+                <input type="submit" value="Créer un compte" onclick="clic()">
+                <input type="submit" value="OK">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="form2" id="show">
+        <div class="modal fade" class="myModal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h1>AllezCiné</h1>
+                <p>Inscrivez-vous</p>
+              </div>
+              <div class="modal-body">
+                <div>
+                  <label for="identifiant">Nom</label>
+                  <input type="text" name="identifiant" placeholder="Entrez votre identifiant">
+                </div>
+                <div>
+                  <label for="password">E-Mail</label>
+                  <input type="text" name="password" placeholder="Entrez votre mot de passe">
+                </div>
+                <div>
+                  <label for="password">Password</label>
+                  <input type="text" name="password" placeholder="Entrez votre mot de passe">
+                </div>
+                <div>
+                  <label for="password">Confirmez Password</label>
+                  <input type="text" name="password" placeholder="Confimez votre mot de passe">
+                </div>
+                <div id="checkbox2">
+                  <label><input type="checkbox" value="">Rester connecté</label>
+                  <label><input type="checkbox" value="">Je suis d'accord avec les conditions générales d'utilisation</label>
+                </div>
+                <div class="liens">
+                  <a href="url">Mot de passe oublié?</a>
+                  <a href="./index.html">Cancel</a>
+                </div>
+                <div class="bouton">
+                  <input type="submit" value="S'enregistrer">
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </container>
+
+  <footer>
+
+  </footer>
+
+
+  <script src="allezcine.js"></script>
+</body>
+
 </html>
+
 </html>
