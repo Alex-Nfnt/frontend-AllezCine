@@ -5,41 +5,73 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
 
-<body>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
-  <div class="container">
-    <h2>Modal Example</h2>
-    <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+  <body>
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
+    <header>
 
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Modal Header</h4>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/film1.jpg" alt="Tomb Raider">
+            <div class="carousel-caption">
+              <h3>Tomb Raider</h3>
+
+            </div>
           </div>
-          <div class="modal-body">
-            <p>Some text in the modal.</p>
+          <div class="carousel-item">
+            <img src="images/film2.png" alt="Ocean's 8">
+            <div class="carousel-caption">
+              <h3>Ocean's 8</h3>
+
+            </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <div class="carousel-item">
+            <img src="images/film3.jpg" alt="La Belle & la Bête">
+            <div class="carousel-caption">
+              <h3>La Belle & la Bête</h3>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/film4.jpg" alt="Anthony Hopkins">
+            <div class="carousel-caption">
+              <h3>Anthony Hopkins</h3>
+
+            </div>
           </div>
         </div>
 
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
       </div>
-    </div>
+    </header>
 
-  </div>
 
-</body>
+
+
+    <script src="allezcine.js"></script>
+
+  </body>
 
 </html>
