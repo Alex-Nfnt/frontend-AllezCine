@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Allez-cine</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <!-- Rajout Bootstrap -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <!-- Rajout CSS  !!!!!!! TOUJOURS LE LANCER APRES LE BOOTSTRAP POUR QU IL SOIT PRIORITAIRE (triste histoire)-->
@@ -12,11 +13,49 @@
 </head>
 
 <body>
+
   <header>
 
   </header>
 
-  <p>là où tout commence</p>
+  <!-- DEBUT : AVERTISSEMENT COCKIES  -->
+  <div class="coockiesUse" id="closeCoockies">
+    <p>En poursuivant votre navigation vous acceptez le dépôt de coockie tiers destinés à vous proposer des contenus et annonces personnalisés, à analyser notre trafic et à partager des informations sur l'utilisation de notre site avec nos partenaires.</p>
+    <button type="button" name="button" onclick="closeCoock()">Accepter</button>
+    <button type="button" name="button" onclick="fakya()">Refuser</button>
+    <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">En savoir plus</a>
+  </div>
+  <!-- FIN : AVERTISSEMENT COCKIES  -->
+
+  <!-- DEBUT : Les boutons réseaux sociaux  -->
+  <div class="twitter">
+    <a href="twitter">Twitter</a>
+    <img src=".\icons\twitter.png" alt="twitterIcon">
+  </div>
+
+  <div class="facebook">
+    <a href="facebook">Facebook</a>
+    <img src=".\icons\facebook.png" alt="facebookIcon">
+  </div>
+
+  <div class="dribbble">
+    <a href="dribbble">Dribble</a>
+    <img src=".\icons\dribbble.png" alt="dribbleIcon">
+  </div>
+
+  <div class="google">
+    <a href="google">Google</a>
+    <img src=".\icons\google.png" alt="googleIcon">
+  </div>
+  <!-- FIN : Les boutons réseaux sociaux -->
+
+  <!-- TITRE -->
+  <div class="title1">
+    <p>FEATURED MOVIES</p>
+  </div>
+
+  <footer>
+  </footer>
 
 
   <!-- Charger fichier javascript du projet -->
