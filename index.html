@@ -23,6 +23,7 @@
 <body>
 
   <header>
+    <!-- Menu -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
       <a class="navbar-brand" href="#"><span style="color: #FE4240">ALLEZ</span>CINE</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -48,7 +49,7 @@
         </ul>
       </div>
     </nav>
-
+    <!-- Barre recherche -->
     <div class="topnav">
       <div class="search-container">
         <form action="/action_page.php">
@@ -57,7 +58,7 @@
         </form>
       </div>
     </div>
-
+    <!-- carroussel -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
       <!-- Indicators -->
@@ -112,10 +113,14 @@
   </header>
 
   <container>
+
+    <!-- boutons -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="btn1">se connecter</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1" id="btn1">Créer un compte</button>
+    </div>
+    <!-- form login -->
     <div class="container">
-
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">se connecter</button>
-
       <div class="modal fade" id="myModal">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -128,22 +133,26 @@
             <div class="modal-body">
               <div>
                 <label for="identifiant">Identifiant</label>
-                <input type="text" name="identifiant" placeholder="Entrez votre identifiant">
+                <input type="text" name="identifiant" value="" placeholder="Entrez votre identifiant">
               </div>
               <div>
                 <label for="password">&nbsp;Password</label>
-                <input type="text" name="password" placeholder="Entrez votre mot de passe">
+                <input type="text" name="password" value="" placeholder="Entrez votre mot de passe">
               </div>
-              <div id="checkbox1">
-                <label><input type="checkbox" value="">Rester connecté</label>
+              <div class="row">
+                <div class="col-md-5 col-xs-5"></div>
+                <div class="col-md-6 col-xs-6" id="checkbox1">
+                  <label><input type="checkbox" value="">Rester connecté</label>
+                </div>
               </div>
               <div class="liens">
                 <a href="url">Mot de passe oublié?</a>
-                <a href="./index.html">Cancel</a>
+
               </div>
               <div class="bouton">
-                <input type="submit" value="Créer un compte">
+                <input type="submit" value="Créer un compte" id="test">
                 <input type="submit" value="OK">
+                <a href="./index.html">Cancel</a>
               </div>
             </div>
 
@@ -157,10 +166,8 @@
       </div>
 
     </div>
+    <!-- form register -->
     <div class="container">
-
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Créer un compte</button>
-
       <div class="modal fade" id="myModal1">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -171,47 +178,69 @@
             </div>
 
             <div class="modal-body">
-              <div>
-                <label for="nom">Nom</label>
-                <input type="text" name="nom" placeholder="Entrez votre nom">
+              <div class="row">
+                <div class="col-md-3 col-xs-3"></div>
+                <div class="col-md-3 col-xs-3">
+                  <label for="nom">Nom</label>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                  <input type="text" name="nom" value="" placeholder="Entrez votre nom">
+                </div>
               </div>
-              <div>
-                <label for="email">&nbsp;E-mail</label>
-                <input type="text" name="email" placeholder="Entrez votre e-mail">
+              <div class="row">
+                <div class="col-md-3 col-xs-3"></div>
+                <div class="col-md-3 col-xs-3">
+                  <label for="email">&nbsp;E-mail</label>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                  <input type="text" name="email" value="" placeholder="Entrez votre e-mail">
+                </div>
               </div>
-              <div>
-                <label for="password">&nbsp;Password</label>
-                <input type="text" name="password" placeholder="Entrez votre password">
+              <div class="row">
+                <div class="col-md-3 col-xs-3"></div>
+                <div class="col-md-3 col-xs-3">
+                  <label for="password">&nbsp;Password</label>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                  <input type="text" name="password" value="" placeholder="Entrez votre password" id="password">
+                </div>
               </div>
-              <div>
-                <label for="confirm">&nbsp;Confirmer password</label>
-                <input type="text" name="confirm" placeholder="Confirmez votre password">
+              <div class="row">
+                <div class="col-md-3 col-xs-3"></div>
+                <div class="col-md-3 col-xs-3">
+                  <label for="confirm">&nbsp;Confirmer password</label>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                  <input type="text" name="confirm" value="" placeholder="Confirmez votre password" id="confirm">
+                </div>
               </div>
-              <div id="checkbox1">
-                <label><input type="checkbox" value="">Rester connecté</label>
+              <div class="row">
+                <div class="col-md-6 col-xs-6"></div>
+                <div class="col-md-6 col-xs-6" id="checkbox1">
+                  <label><input type="checkbox" value="">Rester connecté</label>
+                </div>
               </div>
-              <div id="checkbox2">
-                <label><input type="checkbox" value="">Conditions générales d'utilisation</label>
+              <div class="row">
+                <div class="col-md-6 col-xs-6"></div>
+                <div class="col-md-6 col-xs-6" id="checkbox2">
+                  <label><input type="checkbox" value="">Conditions générales d'utilisation</label>
+                </div>
               </div>
-              <div class="liens">
+              <div class="col-md-12 col-xs-12" class="bouton">
+                <input type="submit" value="Enregistrer" onclick="bordure()">
                 <a href="./index.html">Cancel</a>
               </div>
-              <div class="bouton">
-                <input type="submit" value="Enregistrer">
 
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
               </div>
+
             </div>
-
-
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
-
           </div>
         </div>
-      </div>
 
-    </div>
+      </div>
 
 
   </container>

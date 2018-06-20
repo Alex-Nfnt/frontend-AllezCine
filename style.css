@@ -1,16 +1,35 @@
  #myModal, #myModal1 {
    text-align: center;
-   padding-left: 200px;
  }
 
- .modal-header, .modal-footer {
-   /* background-color: #FE4240; */
-   display: block;
+ #checkbox1, #checkbox2 {
+   text-align: left;
+ }
+
+ /* Boutons */
+
+ #btn1, #btn2 {
+   background-color: #FE4240;
+   border-color: #FE4240;
+ }
+
+ .btn-group {
+   float: right;
+ }
+
+ .btn.focus, .btn:focus {
+   box-shadow: 0 0 0 0.2rem rgba(254, 66, 64, .25);
+ }
+
+ .btn-primary.focus, .btn-primary:focus {
+   box-shadow: 0 0 0 0.2rem rgba(254, 66, 64, .5) !important;
  }
 
  input[type="text"] {
    width: 200px;
  }
+
+ /* Jumbotron */
 
  .jumbotron {
    height: 100%;
@@ -87,3 +106,15 @@
  .carousel-inner img {
    width: 100%;
    height: 100%;
+ }
+
+ .img-thumbnail {
+   display: inline-block;
+   width: 225px;
+   height: 300px;
+ }
+
+ .col-md-2 {
+   padding-left: 5px;
+   padding-right: 5px;
+ }

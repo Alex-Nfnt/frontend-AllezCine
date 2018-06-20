@@ -1,27 +1,21 @@
-// function clic() {
-//   document.getElementById('form1').style.display = "none";
-//   // document.getElementById('form2').style.display = "block";
-//
-// }
+// bascule form/modal
 
-// $("#hide").click(function() {
-//   $("form1").hide();
-// });
-//
-// $("#show").click(function() {
-//   $("form2").show();
-// });
+$("#test").click(function() {
+  $("#myModal").modal("toggle");
+  $("#myModal1").modal("toggle");
+});
 
-//
-// function clic() {
-//
-//   $("form1").hide();
-//   $("form2").show();
-//
-// }
+// confirm mdp
 
-// $(document).ready(function() {
-//   $('.animated-icon1,.animated-icon3,.animated-icon4').click(function() {
-//     $(this).toggleClass('open');
-//   });
-// });
+function bordure() {
+  var champA = document.getElementById("password").value;
+  var champB = document.getElementById("confirm").value;
+
+  if (champA == champB) {
+    document.getElementById("confirm").style.border = "solid green";
+    document.getElementById("password").style.border = "solid green";
+  } else {
+    document.getElementById("password").style.border = "solid red";
+    document.getElementById("confirm").style.border = "solid red";
+  }
+}
