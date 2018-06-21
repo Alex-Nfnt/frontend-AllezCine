@@ -155,9 +155,9 @@ body {
 
 /*TITRES */
 
-.title1 {
+#title1 {
   float: left;
-  margin-left: 300px;
+  margin-left: 50px;
   margin-top: 300px;
   border-left: solid 3px #FE4240;
   width: 300px;
@@ -165,7 +165,7 @@ body {
   height: 25px;
 }
 
-.title1 p {
+#title1 p {
   font-family: sans-serif;
   font-size: 25px;
   margin-left: 15px;

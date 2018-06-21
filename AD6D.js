@@ -20,37 +20,30 @@ function fakya() {
 //  DEBUT BOUTON FLECHE VERS LE HAUT
 var btn = document.createElement("BUTTON");
 btn.style.backgroundImage = "url('icons/arrowUP.png')";
+btn.id = "hope";
 btn.style.height = "50px";
 btn.style.width = "50px";
 btn.style.borderRadius = "35px";
-btn.style.border = "none";
 btn.style.position = "fixed";
 btn.style.bottom = "15px";
 btn.style.right = "15px";
 
+
 document.body.appendChild(btn);
 
-//Scroll to top when arrow up clicked BEGIN
-// $(window).scroll(function() {
-//   var height = $(window).scrollTop();
-//   if (height > 100) {
-//     $('btn').fadeIn();
-//   } else {
-//     $('btn').fadeOut();
-//   }
-// });
-// $(document).ready(function() {
-//   $("btn").click(function(event) {
-//     event.preventDefault();
-//     $("html, body").animate({
-//       scrollTop: 0
-//     }, "slow");
-//     return false;
-//   });
-//
-// });
-//Scroll to top when arrow up clicked END
+btn.onclick = function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
+window.onscroll = function() {
+  scrollFunction()
+};
 
-
-//  FIN BOUTON FLECHE VERS LE HAUT
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    document.getElementById("hope").style.display = "block";
+  } else {
+    document.getElementById("hope").style.display = "none";
+  }
+}
