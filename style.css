@@ -233,3 +233,183 @@ textarea.form-control {
   background-color: transparent;
   color: #fff;
 }
+
+#myModal, #myModal1 {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#checkbox1, #checkbox2 {
+  text-align: left;
+}
+
+/* Boutons */
+
+#btn1, #btn2 {
+  background-color: #FE4240;
+  border-color: #FE4240;
+}
+
+.btn-group {
+  float: right;
+}
+
+.btn.focus, .btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(254, 66, 64, .25);
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(254, 66, 64, .5) !important;
+}
+
+input[type="text"] {
+  width: 200px;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+}
+
+/* menu */
+
+nav a {
+  color: white !important;
+}
+
+nav a:hover {
+  color: #FE4240 !important;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 2;
+}
+
+.bg-dark {
+  background-color: transparent !important;
+}
+
+/* barre de recherche */
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent !important;
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+  top: 5px;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  margin-top: 0px;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+/* carrrousel */
+
+#myCarousel {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Featured Movies */
+
+.img-thumbnail {
+  display: inline-block;
+  width: 400px;
+  height: 300px;
+}
+
+.col-md-2 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #FE4240;
+  color: #ffffff;
+  width: 225px;
+  line-height: 50px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #FE4240;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #f7c8c8;
+  font-weight: bold;
+}
+
+.btn.active {
+  background-color: #f79999;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+#btn3, #btn4 {
+  display: block;
+  margin: auto;
+}
+
+#btn4 {
+  display: none;
+}
+
+a {
+  color: #FE4240;
+}

@@ -1,21 +1,110 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <title>Allez-cine</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <!-- Rajout Bootstrap -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <!-- Rajout CSS  !!!!!!! TOUJOURS LE LANCER APRES LE BOOTSTRAP POUR QU IL SOIT PRIORITAIRE (triste histoire)-->
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <style type="text/css"></style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="AllezCine">
+  <meta name="theme-color" content="white">
+
+  <title>AllezCine</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <!-- <link rel="manifest" href="./manifest.json"> -->
 </head>
 
 <body>
 
   <header>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand" href="#"><span style="color: #FE4240">ALLEZ</span>CINE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" class="onmouseover()" href="#">Films</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" class="onmouseover()" href="#">Featured movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" class="onmouseover()" href="#">Fetured series tv</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" class="onmouseover()" href="#">Shop movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" class="onmouseover()" href="#">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Barre recherche -->
+    <div class="topnav">
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search ..." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <!-- carroussel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/film1.jpg" alt="Tomb Raider">
+          <div class="carousel-caption">
+            <h3>Tomb Raider</h3>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/film2.png" alt="Ocean's 8">
+          <div class="carousel-caption">
+            <h3>Ocean's 8</h3>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/film3.jpg" alt="La Belle & la Bête">
+          <div class="carousel-caption">
+            <h3>La Belle & la Bête</h3>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/film4.jpg" alt="Anthony Hopkins">
+          <div class="carousel-caption">
+            <h3>Anthony Hopkins</h3>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+    </div>
   </header>
 
   <!-- DEBUT : AVERTISSEMENT COCKIES  -->
@@ -56,7 +145,219 @@
     </div>
   </div>
   <!-- TITRE FIN -->
+  <container>
 
+    <!-- boutons -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="btn1">se connecter</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1" id="btn2">Créer un compte</button>
+    </div>
+    <!-- form login -->
+    <div class="container">
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h1><span id="h1" style="color: #FE4240">Allez</span>Ciné</h1>
+              <span>Connectez-vous</span>
+            </div>
+
+            <div class="modal-body">
+              <div>
+                <label for="identifiant">Identifiant</label>
+                <input type="text" name="identifiant" value="" placeholder="Entrez votre identifiant">
+              </div>
+              <div>
+                <label for="password">&nbsp;Password</label>
+                <input type="text" name="password" value="" placeholder="Entrez votre mot de passe">
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-xs-5"></div>
+                <div class="col-md-6 col-xs-6" id="checkbox1">
+                  <label><input type="checkbox" value="">Rester connecté</label>
+                </div>
+              </div>
+              <div class="liens">
+                <a href="url">Mot de passe oublié?</a>
+
+              </div>
+              <div class="bouton">
+                <input type="submit" value="Créer un compte" id="test">
+                <input type="submit" value="OK">
+                <a href="./index.html">Cancel</a>
+              </div>
+            </div>
+
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- form register -->
+    <div class="container">
+      <div class="modal fade" id="myModal1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1><span id="h1" style="color: #FE4240">Allez</span>Ciné</h1>
+              <span>Enregistrez-vous</span>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-3 col-xs-3"></div>
+                <div class="col-md-3 col-xs-3">
+                  <label for="nom">Nom</label>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                  <input type="text" name="nom" value="" placeholder="Entrez votre nom">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 col-xs-3"></div>
+                <div class="col-md-3 col-xs-3">
+                  <label for="email">&nbsp;E-mail</label>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                  <input type="text" name="email" value="" placeholder="Entrez votre e-mail">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 col-xs-3"></div>
+                <div class="col-md-3 col-xs-3">
+                  <label for="password">&nbsp;Password</label>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                  <input type="text" name="password" value="" placeholder="Entrez votre password" id="password">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 col-xs-3"></div>
+                <div class="col-md-3 col-xs-3">
+                  <label for="confirm">&nbsp;Confirmer password</label>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                  <input type="text" name="confirm" value="" placeholder="Confirmez votre password" id="confirm">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-xs-6"></div>
+                <div class="col-md-6 col-xs-6" id="checkbox1">
+                  <label><input type="checkbox" value="">Rester connecté</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-xs-6"></div>
+                <div class="col-md-6 col-xs-6" id="checkbox2">
+                  <label><input type="checkbox" value="">Conditions générales d'utilisation</label>
+                </div>
+              </div>
+              <div class="col-md-12 col-xs-12" class="bouton">
+                <input type="submit" value="Enregistrer" onclick="bordure()">
+                <a href="./index.html">Cancel</a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> All</button>
+      <button class="btn" onclick="filterSelection('aventure')"> Aventure</button>
+      <button class="btn" onclick="filterSelection('comedie')"> Comédie</button>
+      <button class="btn" onclick="filterSelection('drame')"> Drame</button>
+      <button class="btn" onclick="filterSelection('scifi')"> Scifi</button>
+      <button class="btn" onclick="filterSelection('thriller')"> Thriller</button>
+    </div>
+    <div class="container">
+      <div class="filterDiv comedie">
+        <img src="images/batmanmovie-2017-comedie.jpg" class="img-thumbnail img-fluid d-block" alt="">
+        <h5>Batman Movie</h5>
+        <p>2017</p>
+      </div>
+      <div class="filterDiv thriller">
+        <img src="images/hostel-2005-thriller.jpg" class="img-thumbnail img-fluid" alt="">
+        <h5>Hostel</h5>
+        <p>2005</p>
+      </div>
+      <div class="filterDiv scifi">
+        <img src="images/inception-2010-scifi.jpg" class="img-thumbnail img-fluid" alt="">
+        <h5>Inception</h5>
+        <p>2010</p>
+      </div>
+      <div class="filterDiv comedie">
+        <img src="images/intouchables-2011-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+        <h5>Intouchables</h5>
+        <p>2011</p>
+      </div>
+      <div class="filterDiv drame">
+        <img src="images/lepatientanglais-1996-dramatique.jpg" class="img-thumbnail img-fluid" alt="">
+        <h5>Le Patient Anglais</h5>
+        <p>1996</p>
+      </div>
+      <div class="filterDiv aventure">
+        <img src="images/lesdeuxtours-2002-aventure.jpg" class="img-thumbnail img-fluid" alt="">
+        <h5>Les Deux Tours</h5>
+        <p>2002</p>
+      </div>
+
+      <div class="filterDiv thriller">
+        <img src="images/seven-1995-thriller.jpg" class="img-thumbnail img-fluid" alt="">
+        <h5>Seven</h5>
+        <p>1995</p>
+      </div>
+      <div class="filterDiv thriller">
+        <img src="images/shutterisland-2010-thriller.jpg" class="img-thumbnail img-fluid" alt="">
+        <h5>Shutter Island</h5>
+        <p>2010</p>
+      </div>
+      <div id="toggle">
+        <div class="filterDiv scifi">
+          <img src="images/starwarsempire-1980-scifi.jpg" class="img-thumbnail img-fluid" alt="">
+          <h5>Star Wars Empire</h5>
+          <p>1980</p>
+        </div>
+        <div class="filterDiv comedie">
+          <img src="images/Survivestyle5-2004-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+          <h5>Survive style 5</h5>
+          <p>2004</p>
+        </div>
+        <div class="filterDiv comedie">
+          <img src="images/swissarmyman-2016-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+          <h5>Swiss Army Man</h5>
+          <p>2016</p>
+        </div>
+        <div class="filterDiv drame">
+          <img src="images/thefall-2006-dramatique.jpg" class="img-thumbnail img-fluid" alt="">
+          <h5>The Fall</h5>
+          <p>2006</p>
+        </div>
+        <div class="filterDiv comedie">
+          <img src="images/WhatWeDoInTheShadows-2014-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+          <h5>What We Do In The Shadows</h5>
+          <p>2014</p>
+        </div>
+        <div class="filterDiv comedie">
+          <img src="images/zoolander-2001-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+          <h5>Zoolander</h5>
+          <p>2001</p>
+        </div>
+      </div>
+    </div>
+    <button type="button" name="button" id="btn3"><a href="#" id="toggler" onclick="changer()">Afficher plus de films</a></button>
+    <button type="button" name="button" id="btn4"><a href="#" id="toggler1" onclick="changer1()">Afficher moins de films</a></button>
+
+
+  </container>
 
   <footer>
     <!-- CONTACT -->
@@ -102,6 +403,7 @@
 
   <!-- Charger fichier javascript du projet -->
   <script type="text/javascript" src="AD6D.js"></script>
+  <script src="allezcine.js"></script>
   <!-- Rajout Bootstrap jquery, Popper.js et javascript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

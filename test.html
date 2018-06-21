@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+  <body>
+
+    <header>
+    </header>
+
+    <container>
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> All</button>
+        <button class="btn" onclick="filterSelection('aventure')"> Aventure</button>
+        <button class="btn" onclick="filterSelection('comedie')"> Comédie</button>
+        <button class="btn" onclick="filterSelection('drame')"> Drame</button>
+        <button class="btn" onclick="filterSelection('scifi')"> Scifi</button>
+        <button class="btn" onclick="filterSelection('thriller')"> Thriller</button>
+      </div>
+      <div class="container">
+        <div class="filterDiv comedie">
+          <img src="images/batmanmovie-2017-comedie.jpg" class="img-thumbnail img-fluid d-block" alt="">
+          <h5>Batman Movie</h5>
+          <p>2017</p>
+        </div>
+        <div class="filterDiv thriller">
+          <img src="images/hostel-2005-thriller.jpg" class="img-thumbnail img-fluid" alt="">
+          <h5>Hostel</h5>
+          <p>2005</p>
+        </div>
+        <div class="filterDiv scifi">
+          <img src="images/inception-2010-scifi.jpg" class="img-thumbnail img-fluid" alt="">
+          <h5>Inception</h5>
+          <p>2010</p>
+        </div>
+        <div class="filterDiv comedie">
+          <img src="images/intouchables-2011-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+          <h5>Intouchables</h5>
+          <p>2011</p>
+        </div>
+        <div class="filterDiv drame">
+          <img src="images/lepatientanglais-1996-dramatique.jpg" class="img-thumbnail img-fluid" alt="">
+          <h5>Le Patient Anglais</h5>
+          <p>1996</p>
+        </div>
+        <div class="filterDiv aventure">
+          <img src="images/lesdeuxtours-2002-aventure.jpg" class="img-thumbnail img-fluid" alt="">
+          <h5>Les Deux Tours</h5>
+          <p>2002</p>
+        </div>
+
+        <div class="filterDiv thriller">
+          <img src="images/seven-1995-thriller.jpg" class="img-thumbnail img-fluid" alt="">
+          <h5>Seven</h5>
+          <p>1995</p>
+        </div>
+        <div class="filterDiv thriller">
+          <img src="images/shutterisland-2010-thriller.jpg" class="img-thumbnail img-fluid" alt="">
+          <h5>Shutter Island</h5>
+          <p>2010</p>
+        </div>
+        <div id="toggle">
+          <div class="filterDiv scifi">
+            <img src="images/starwarsempire-1980-scifi.jpg" class="img-thumbnail img-fluid" alt="">
+            <h5>Star Wars Empire</h5>
+            <p>1980</p>
+          </div>
+          <div class="filterDiv comedie">
+            <img src="images/Survivestyle5-2004-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+            <h5>Survive style 5</h5>
+            <p>2004</p>
+          </div>
+          <div class="filterDiv comedie">
+            <img src="images/swissarmyman-2016-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+            <h5>Swiss Army Man</h5>
+            <p>2016</p>
+          </div>
+          <div class="filterDiv drame">
+            <img src="images/thefall-2006-dramatique.jpg" class="img-thumbnail img-fluid" alt="">
+            <h5>The Fall</h5>
+            <p>2006</p>
+          </div>
+          <div class="filterDiv comedie">
+            <img src="images/WhatWeDoInTheShadows-2014-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+            <h5>What We Do In The Shadows</h5>
+            <p>2014</p>
+          </div>
+          <div class="filterDiv comedie">
+            <img src="images/zoolander-2001-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+            <h5>Zoolander</h5>
+            <p>2001</p>
+          </div>
+        </div>
+      </div>
+      <button type="button" name="button" id="btn3"><a href="#" id="toggler" onclick="changer()">Afficher plus de films</a></button>
+      <button type="button" name="button" id="btn4"><a href="#" id="toggler1" onclick="changer1()">Afficher moins de films</a></button>
+
+    </container>
+
+
+
+    <script src="allezcine.js"></script>
+
+  </body>
+
+</html>
