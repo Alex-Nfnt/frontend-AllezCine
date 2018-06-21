@@ -1,5 +1,7 @@
  #myModal, #myModal1 {
    text-align: center;
+   overflow-x: hidden;
+   overflow-y: auto;
  }
 
  #checkbox1, #checkbox2 {
@@ -108,13 +110,70 @@
    height: 100%;
  }
 
+ /* Featured Movies */
+
  .img-thumbnail {
    display: inline-block;
-   width: 225px;
+   width: 400px;
    height: 300px;
  }
 
  .col-md-2 {
    padding-left: 5px;
    padding-right: 5px;
+ }
+
+ .filterDiv {
+   float: left;
+   background-color: #FE4240;
+   color: #ffffff;
+   width: 225px;
+   line-height: 50px;
+   text-align: center;
+   margin: 2px;
+   display: none;
+ }
+
+ .show {
+   display: block;
+ }
+
+ .container {
+   margin-top: 20px;
+   overflow: hidden;
+ }
+
+ /* Style the buttons */
+
+ .btn {
+   border: none;
+   outline: none;
+   padding: 12px 16px;
+   background-color: #FE4240;
+   color: #fff;
+   cursor: pointer;
+ }
+
+ .btn:hover {
+   background-color: #f7c8c8;
+   font-weight: bold;
+ }
+
+ .btn.active {
+   background-color: #f79999;
+   color: #ff0000;
+   font-weight: bold;
+ }
+
+ #btn3, #btn4 {
+   display: block;
+   margin: auto;
+ }
+
+ #btn4 {
+   display: none;
+ }
+
+ a {
+   color: #FE4240;
  }
