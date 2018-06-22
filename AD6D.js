@@ -46,4 +46,14 @@ function scrollFunction() {
   } else {
     document.getElementById("hope").style.display = "none";
   }
-}
+};
+
+// Envoi Contact
+//
+function sendClick() {
+  var name = document.getElementById("userName").value;
+  var email = document.getElementById("userEmail").value;
+  var tel = document.getElementById("userTelephone").value;
+  var message = document.getElementById("userMessage").value;
+  alert("Bonjour,  " + name + "\n\nVotre email est :  " + email + "\n\nVotre numéro de téléphone est :  " + tel + "\n\nEt votre message est le suivant :  " + message);
+};

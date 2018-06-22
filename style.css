@@ -1,26 +1,34 @@
-body {
-  height: 2000px;
+#collapsibleNavbar {
+  background-color: black;
+  border-radius: 45px;
+  opacity: 0.8;
+  font-weight: bold;
 }
 
 /* DEBUT : ALERT COOCKIES */
 
 .coockiesUse {
-  float: right;
-  top: 0px;
-  opacity: 0.7;
   display: block;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  opacity: 0.7;
   background-color: #FE4240;
   width: 350px;
   max-width: 100%;
   height: 220px;
-  margin-top: 400px;
   text-align: center;
   border-radius: 15px;
+  z-index: 1500;
 }
 
 .coockiesUse button {
   float: left;
   margin-left: 20px;
+}
+
+.coockiesUse a {
+  color: white;
 }
 
 /* FIN : ALERT COOCKIES */
@@ -30,7 +38,7 @@ body {
 .twitter {
   display: block;
   position: fixed;
-  margin-top: 200px;
+  margin-top: -75px;
   width: 140px;
   height: 40px;
   background-color: #6Ac2F4;
@@ -61,7 +69,7 @@ body {
 .facebook {
   display: block;
   position: fixed;
-  margin-top: 260px;
+  margin-top: -25px;
   width: 140px;
   height: 40px;
   background-color: #3E5F94;
@@ -92,7 +100,7 @@ body {
 .dribbble {
   display: block;
   position: fixed;
-  margin-top: 320px;
+  margin-top: 25px;
   width: 140px;
   height: 40px;
   background-color: #E4729E;
@@ -123,7 +131,7 @@ body {
 .google {
   display: block;
   position: fixed;
-  margin-top: 380px;
+  margin-top: 75px;
   width: 140px;
   height: 40px;
   background-color: #DB4C34;
@@ -157,8 +165,8 @@ body {
 
 #title1 {
   float: left;
-  margin-left: 50px;
-  margin-top: 300px;
+  margin-left: 200px;
+  margin-bottom: 25px;
   border-left: solid 3px #FE4240;
   width: 300px;
   max-width: 100%;
@@ -173,23 +181,36 @@ body {
   line-height: 25px;
 }
 
+.titre2 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 /* CONTACT */
+
+iframe {
+  margin-top: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  width: : 100%;
+  display: block;
+}
 
 .section-content {
   text-align: center;
 }
 
 #contact {
+  margin-top: 50px;
   font-family: 'Teko', sans-serif;
   padding-top: 60px;
   width: 100%;
-  width: 100vw;
-  height: 550px;
-  background: #3a6186;
+  height: 700px;
+  background: #f4a742;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #3a6186, #89253e);
+  background: -webkit-linear-gradient(to left, #f4a742, #FE4240);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #3a6186, #89253e);
+  background: linear-gradient(to left, #f4a742, #FE4240);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
 }
@@ -222,15 +243,16 @@ label {
 }
 
 textarea.form-control {
-  height: 135px;
+  height: 100px;
   /* margin-top: px;*/
 }
 
 .submit {
   font-size: 1.1em;
-  float: right;
-  width: 150px;
+  float: left;
+  width: 200px;
   background-color: transparent;
+  border-radius: 35px;
   color: #fff;
 }
 
@@ -245,6 +267,10 @@ textarea.form-control {
 }
 
 /* Boutons */
+
+#myBtnContainer {
+  margin-left: 200px;
+}
 
 #btn1, #btn2 {
   background-color: #FE4240;
@@ -296,6 +322,10 @@ nav a:hover {
 
 /* barre de recherche */
 
+.navbar-brand {
+  font-weight: bold;
+}
+
 .topnav {
   overflow: hidden;
   background-color: transparent !important;
@@ -315,6 +345,8 @@ nav a:hover {
   font-size: 17px;
   border: none;
   margin-top: 0px;
+  border-radius: 45px;
+  opacity: 0.5;
 }
 
 .topnav .search-container button {
@@ -327,6 +359,8 @@ nav a:hover {
   border: none;
   cursor: pointer;
   margin-top: 0px;
+  border-radius: 45px;
+  opacity: 0.5;
 }
 
 .topnav .search-container button:hover {
@@ -336,7 +370,7 @@ nav a:hover {
 /* carrrousel */
 
 #myCarousel {
-  height: 300px;
+  /* height: 300px; */
   width: 100%;
   overflow: hidden;
 }
@@ -401,7 +435,18 @@ nav a:hover {
   font-weight: bold;
 }
 
-#btn3, #btn4 {
+#btn3 {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  border: solid 2.5px #FE4240;
+}
+
+#btn3:hover {
+  background-color: #f7c8c8;
+}
+
+#btn4 {
   display: block;
   margin: auto;
 }
@@ -412,4 +457,103 @@ nav a:hover {
 
 a {
   color: #FE4240;
+}
+
+/* ++++++++++++++++++++++ */
+
+/* shop movie */
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+
+.mySlides {
+  display: none;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #FE4240 !important;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+
+.caption-container {
+  text-align: center;
+  background-color: #FE4240;
+  padding: 2px 16px;
+  color: white;
+  width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+
+.column {
+  float: left;
+  width: 14.28%;
+}
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+  opacity: 0.6;
+  width: 100%;
+}
+
+.active, .demo:hover {
+  opacity: 1;
 }
