@@ -186,6 +186,10 @@
   margin-bottom: 25px;
 }
 
+.row h5 {
+  text-align: center;
+}
+
 /* CONTACT */
 
 iframe {
