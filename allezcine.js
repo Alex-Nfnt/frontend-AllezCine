@@ -20,6 +20,8 @@ function bordure() {
   }
 }
 
+// Filtre genre film
+
 filterSelection("all")
 
 function filterSelection(c) {
@@ -55,7 +57,7 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
+// Add active class to the current button(highlight it)
 // var btnContainer = document.getElementById("myBtnContainer");
 // var btns = btnContainer.getElementsByClassName("btn");
 // for (var i = 0; i < btns.length; i++) {
@@ -67,12 +69,22 @@ function w3RemoveClass(element, name) {
 // }
 
 
-jQuery(document).ready(function() {
+$(document).ready(function() {
   // On cache la zone de texte
-  jQuery('#toggle').hide();
+  $('#toggle').hide();
   // toggle() lorsque le lien avec l'ID #toggler est cliqué
-  jQuery('a#toggler').click(function() {
-    jQuery('#toggle').toggle();
+  $('a#toggler').click(function() {
+    $('#toggle').toggle();
+    return false;
+  });
+});
+
+$(document).ready(function() {
+  // On cache la zone de texte
+  $('#toggle').hide();
+  // toggle() lorsque le lien avec l'ID #toggler est cliqué
+  $('a#toggler1').click(function() {
+    $('#toggle').toggle();
     return false;
   });
 });
@@ -91,6 +103,7 @@ function changer1() {
   document.getElementById('btn3').style.display = 'block';
 }
 
+// slides shop movie
 
 var slideIndex = 1;
 showSlides(slideIndex);
