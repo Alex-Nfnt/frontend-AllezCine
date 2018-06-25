@@ -561,3 +561,9 @@ a {
 .active, .demo:hover {
   opacity: 1;
 }
+
+#shopmovies {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
