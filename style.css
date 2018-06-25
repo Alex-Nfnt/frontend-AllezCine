@@ -163,7 +163,7 @@
 
 /*TITRES */
 
-#title1 {
+#title1, #title0 {
   float: left;
   margin-left: 200px;
   margin-bottom: 25px;
@@ -173,7 +173,7 @@
   height: 25px;
 }
 
-#title1 p {
+#title1 p, #title0 p {
   font-family: sans-serif;
   font-size: 25px;
   margin-left: 15px;
@@ -256,6 +256,13 @@ textarea.form-control {
   color: #fff;
 }
 
+/* Login/register */
+
+.entetes {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #myModal, #myModal1 {
   text-align: center;
   overflow-x: hidden;
@@ -289,8 +296,12 @@ textarea.form-control {
   box-shadow: 0 0 0 0.2rem rgba(254, 66, 64, .5) !important;
 }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
   width: 200px;
+}
+
+.label {
+  text-align: right;
 }
 
 /* Jumbotron */
@@ -533,7 +544,6 @@ a {
 .caption-container {
   text-align: center;
   background-color: #FE4240;
-  padding: 2px 16px;
   color: white;
   width: 100%;
 }
