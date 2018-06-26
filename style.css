@@ -196,9 +196,20 @@
   margin-right: auto;
 }
 
+/*
 .bgc {
   background-color: #FE4240;
   color: white;
+} */
+
+.annees {
+  width: 50%;
+  float: left;
+}
+
+.genres {
+  width: 50%;
+  float: right;
 }
 
 /* CONTACT */
@@ -408,11 +419,12 @@ nav a:hover {
 
 /* Featured Movies */
 
+/*
 .img-thumbnail {
   display: inline-block;
   width: 400px;
   height: 300px;
-}
+} */
 
 .col-md-2 {
   padding-left: 5px;
