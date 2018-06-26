@@ -1,8 +1,37 @@
+/* html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+ul, li, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+} */
+
+.row {
+  margin: auto;
+}
+
 #collapsibleNavbar {
   background-color: black;
   border-radius: 45px;
   opacity: 0.8;
   font-weight: bold;
+  text-align: center;
 }
 
 /* DEBUT : ALERT COOCKIES */
@@ -165,8 +194,9 @@
 
 #title1, #title0 {
   float: left;
-  margin-left: 200px;
   margin-bottom: 25px;
+  margin-left: 200px;
+  margin-right: auto;
   border-left: solid 3px #FE4240;
   width: 300px;
   max-width: 100%;
@@ -201,6 +231,10 @@
   background-color: #FE4240;
   color: white;
 } */
+
+#contentBasic2 p {
+  text-align: justify;
+}
 
 .annees {
   width: 50%;
