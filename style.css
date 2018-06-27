@@ -48,7 +48,7 @@ ul, li, a {
   text-align: center;
 }
 
-#newsletter input[type=text], input[type=submit] {
+#newsletter input[type=text], #newsletter input[type=submit] {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
