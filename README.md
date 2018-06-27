@@ -1,19 +1,20 @@
 # frontend-AllezCine
 
 ## Description
-Project realized during Becode formation (Brussels).
-We had to create a one-page site inspired by a layout by following instructions.
->  https://github.com/becodeorg/Johnson2/blob/master/projets/AllezCine/layout-one-v2.jpg
+Projet réalisé pendant la formation Becode (Bruxelles)
+Nous devions créer un site one-page en suivant des consignes et en s'inspirant d'un layout.
 
-## How ?
+> [layout] https://github.com/becodeorg/Johnson2/blob/master/projets/AllezCine/layout-one-v2.jpg
 
-Use of HTML, CSS, framework CSS, Javascript, jQuery.
+## Comment ?
 
-## When ?
+En utilisant HTML, CSS, framework CSS, Javascript, jQuery.
 
-from 18/06/2018 to 29/06/2018
+## Quand ?
 
-## By Who ?
+Du 18/06/2018 au 29/06/2018
+
+## Par qui ?
 
 >Antoni Dalle Nogare
 [Github] https://github.com/tonidano
@@ -23,9 +24,10 @@ from 18/06/2018 to 29/06/2018
 
 ## Deployment
 
-By github Page
+Via github page
 
 > https://github.com/Alex-Nfnt/frontend-AllezCine
 
 ## Audit
-![Test Lightouse](test-lighthouse.png)
+
+![Test Lightouse](lighthouse-test.png)
