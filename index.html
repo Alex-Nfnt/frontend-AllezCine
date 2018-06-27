@@ -25,7 +25,7 @@
     <!-- Menu -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
       <a class="navbar-brand" href="#"><span style="color: #FE4240">ALLEZ</span>CINE</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <button class="navbar-toggler" name="button" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -50,7 +50,7 @@
       <div class="search-container">
         <form action="/action_page.php">
           <input type="text" placeholder="Search ..." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
+          <button type="submit" name="button"><i class="fa fa-search"></i></button>
         </form>
       </div>
     </div>
@@ -98,10 +98,10 @@
       </div>
 
       <!-- Left and right controls -->
-      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+      <a class="carousel-control-prev" name="prev" href="#myCarousel" data-slide="prev">
       <span class="carousel-control-prev-icon"></span>
     </a>
-      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+      <a class="carousel-control-next" name="next" href="#myCarousel" data-slide="next">
       <span class="carousel-control-next-icon"></span>
     </a>
     </div>
@@ -119,7 +119,7 @@
 
           <div class="modal-header">
             <div class="entetes">
-              <h1><span id="h1" style="color: #FE4240">Allez</span>Ciné</h1>
+              <h1><span style="color: #FE4240">Allez</span>Ciné</h1>
               <span>Connectez-vous</span>
             </div>
           </div>
@@ -146,7 +146,7 @@
             </div>
             <div class="row">
               <div class="col-md-5 col-xs-5"></div>
-              <div class="col-md-6 col-xs-6" id="checkbox1">
+              <div class="col-md-6 col-xs-6" class="checkbox1">
                 <label><input type="checkbox" value="">Rester connecté</label>
               </div>
             </div>
@@ -179,7 +179,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <div class="entetes">
-              <h1><span id="h1" style="color: #FE4240">Allez</span>Ciné</h1>
+              <h1><span style="color: #FE4240">Allez</span>Ciné</h1>
               <span>Enregistrez-vous</span>
             </div>
           </div>
@@ -222,7 +222,7 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-xs-4"></div>
-              <div class="col-md-8 col-xs-8" id="checkbox1">
+              <div class="col-md-8 col-xs-8" class="checkbox1">
                 <label><input type="checkbox" value="">Rester connecté</label>
               </div>
             </div>
@@ -278,7 +278,7 @@
 
   <!-- TITRE -->
   <div class="row" id="films">
-    <div class="col-md-12 col-xs12" id="title0">
+    <div class="col-md-12 col-xs12" class="title1">
       <p>FILMS</p>
     </div>
   </div>
@@ -288,7 +288,7 @@
 
 
     <a data-toggle="modal" href="#contentBasic0" class="btn btn-primary btn-lg">
-    <img src="images/batmanmovie-2017-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+    <img src="images/batmanmovie-2017-comedie.jpg" class="img-thumbnail img-fluid" alt="batmanmovie">
     <h5>Batman Movie</h5>
     <div class="conteneur">
       <div class="annees">
@@ -317,7 +317,7 @@
     </div>
 
     <a data-toggle="modal" href="#contentBasic1" class="btn btn-primary btn-lg">
-    <img src="images/hostel-2005-thriller.jpg" class="img-thumbnail img-fluid" alt="">
+    <img src="images/hostel-2005-thriller.jpg" class="img-thumbnail img-fluid" alt="hostel">
     <h5>Hostel</h5>
       <div class="conteneur">
         <div class="annees">
@@ -345,7 +345,7 @@
     </div>
 
     <a data-toggle="modal" href="#contentBasic2" class="btn btn-primary btn-lg">
-    <img src="images/inception-2010-scifi.jpg" class="img-thumbnail img-fluid" alt="">
+    <img src="images/inception-2010-scifi.jpg" class="img-thumbnail img-fluid" alt="inception">
     <h5>Inception</h5>
       <div class="conteneur">
         <div class="annees">
@@ -375,7 +375,7 @@
     </div>
 
     <a data-toggle="modal" href="#contentBasic3" class="btn btn-primary btn-lg">
-    <img src="images/intouchables-2011-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+    <img src="images/intouchables-2011-comedie.jpg" class="img-thumbnail img-fluid" alt="intouchables">
     <h5>Intouchables</h5>
       <div class="conteneur">
         <div class="annees">
@@ -404,7 +404,7 @@
     </div>
 
     <a data-toggle="modal" href="#contentBasic4" class="btn btn-primary btn-lg">
-    <img src="images/lepatientanglais-1996-dramatique.jpg" class="img-thumbnail img-fluid" alt="">
+    <img src="images/lepatientanglais-1996-dramatique.jpg" class="img-thumbnail img-fluid" alt="lepatientanglais">
     <h5>Le Patient Anglais</h5>
     <div class="conteneur">
       <div class="annees">
@@ -433,7 +433,7 @@
     </div>
 
     <a data-toggle="modal" href="#contentBasic5" class="btn btn-primary btn-lg">
-    <img src="images/lesdeuxtours-2002-aventure.jpg" class="img-thumbnail img-fluid" alt="">
+    <img src="images/lesdeuxtours-2002-aventure.jpg" class="img-thumbnail img-fluid" alt="lesdeuxtours">
       <h5>Les Deux Tours</h5>
       <div class="conteneur">
         <div class="annees">
@@ -456,7 +456,7 @@
     </div>
 
     <a data-toggle="modal" href="#contentBasic6" class="btn btn-primary btn-lg">
-    <img src="images/seven-1995-thriller.jpg" class="img-thumbnail img-fluid" alt="">
+    <img src="images/seven-1995-thriller.jpg" class="img-thumbnail img-fluid" alt="seven">
       <h5>Seven</h5>
       <div class="conteneur">
         <div class="annees">
@@ -479,7 +479,7 @@
     </div>
 
     <a data-toggle="modal" href="#contentBasic7" class="btn btn-primary btn-lg">
-    <img src="images/shutterisland-2010-thriller.jpg" class="img-thumbnail img-fluid" alt="">
+    <img src="images/shutterisland-2010-thriller.jpg" class="img-thumbnail img-fluid" alt="shutterisland">
       <h5>Shutter Island</h5>
       <div class="conteneur">
         <div class="annees">
@@ -502,7 +502,7 @@
     </div>
 
     <a data-toggle="modal" href="#contentBasic8" class="btn btn-primary btn-lg">
-    <img src="images/starwarsempire-1980-scifi.jpg" class="img-thumbnail img-fluid" alt="">
+    <img src="images/starwarsempire-1980-scifi.jpg" class="img-thumbnail img-fluid" alt="starwarsempire">
       <h5>Star Wars Empire</h5>
       <div class="conteneur">
         <div class="annees">
@@ -525,7 +525,7 @@
     </div>
 
     <a data-toggle="modal" href="#contentBasic9" class="btn btn-primary btn-lg">
-    <img src="images/Survivestyle5-2004-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+    <img src="images/Survivestyle5-2004-comedie.jpg" class="img-thumbnail img-fluid" alt="survivestyle5">
       <h5>Survive style 5</h5>
       <div class="conteneur">
         <div class="annees">
@@ -548,7 +548,7 @@
     </div>
 
     <a data-toggle="modal" href="#contentBasic10" class="btn btn-primary btn-lg">
-    <img src="images/swissarmyman-2016-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+    <img src="images/swissarmyman-2016-comedie.jpg" class="img-thumbnail img-fluid" alt="swissarmyman">
       <h5>Swiss Army Man</h5>
       <div class="conteneur">
         <div class="annees">
@@ -571,7 +571,7 @@
     </div>
 
     <a data-toggle="modal" href="#contentBasic11" class="btn btn-primary btn-lg">
-    <img src="images/thefall-2006-dramatique.jpg" class="img-thumbnail img-fluid" alt="">
+    <img src="images/thefall-2006-dramatique.jpg" class="img-thumbnail img-fluid" alt="thefall">
       <h5>The Fall</h5>
       <div class="conteneur">
         <div class="annees">
@@ -594,7 +594,7 @@
     </div>
 
     <a data-toggle="modal" href="#contentBasic12" class="btn btn-primary btn-lg">
-    <img src="images/WhatWeDoInTheShadows-2014-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+    <img src="images/WhatWeDoInTheShadows-2014-comedie.jpg" class="img-thumbnail img-fluid" alt="WhatWeDoInTheShadows">
       <h5>What We Do In The Shadows</h5>
       <div class="conteneur">
         <div class="annees">
@@ -617,7 +617,7 @@
     </div>
 
     <a data-toggle="modal" href="#contentBasic13" class="btn btn-primary btn-lg">
-    <img src="images/zoolander-2001-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+    <img src="images/zoolander-2001-comedie.jpg" class="img-thumbnail img-fluid" alt="zoolander">
       <h5>Zoolander</h5>
       <div class="conteneur">
         <div class="annees">
@@ -646,7 +646,7 @@
     <!-- <div class="col-lg-2 col-xs-2">
 
     </div> -->
-    <div class="col-lg-10 col-xs-10" id="title1">
+    <div class="col-lg-10 col-xs-10" class="title1">
       <p>FEATURED MOVIES</p>
     </div>
 
@@ -664,74 +664,74 @@
   </div>
   <div class="container">
     <div class="filterDiv comedie">
-      <img src="images/batmanmovie-2017-comedie.jpg" class="img-thumbnail img-fluid d-block" alt="">
+      <img src="images/batmanmovie-2017-comedie.jpg" class="img-thumbnail img-fluid d-block" alt="batmanmovie">
       <h5>Batman Movie</h5>
       <p>2017</p>
     </div>
     <div class="filterDiv thriller">
-      <img src="images/hostel-2005-thriller.jpg" class="img-thumbnail img-fluid" alt="">
+      <img src="images/hostel-2005-thriller.jpg" class="img-thumbnail img-fluid" alt="hostel">
       <h5>Hostel</h5>
       <p>2005</p>
     </div>
     <div class="filterDiv scifi">
-      <img src="images/inception-2010-scifi.jpg" class="img-thumbnail img-fluid" alt="">
+      <img src="images/inception-2010-scifi.jpg" class="img-thumbnail img-fluid" alt="inception">
       <h5>Inception</h5>
       <p>2010</p>
     </div>
     <div class="filterDiv comedie">
-      <img src="images/intouchables-2011-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+      <img src="images/intouchables-2011-comedie.jpg" class="img-thumbnail img-fluid" alt="intouchables">
       <h5>Intouchables</h5>
       <p>2011</p>
     </div>
     <div class="filterDiv drame">
-      <img src="images/lepatientanglais-1996-dramatique.jpg" class="img-thumbnail img-fluid" alt="">
+      <img src="images/lepatientanglais-1996-dramatique.jpg" class="img-thumbnail img-fluid" alt="lepatientanglais">
       <h5>Le Patient Anglais</h5>
       <p>1996</p>
     </div>
     <div class="filterDiv aventure">
-      <img src="images/lesdeuxtours-2002-aventure.jpg" class="img-thumbnail img-fluid" alt="">
+      <img src="images/lesdeuxtours-2002-aventure.jpg" class="img-thumbnail img-fluid" alt="lesdeuxtours">
       <h5>Les Deux Tours</h5>
       <p>2002</p>
     </div>
 
     <div class="filterDiv thriller">
-      <img src="images/seven-1995-thriller.jpg" class="img-thumbnail img-fluid" alt="">
+      <img src="images/seven-1995-thriller.jpg" class="img-thumbnail img-fluid" alt="seven">
       <h5>Seven</h5>
       <p>1995</p>
     </div>
     <div class="filterDiv thriller">
-      <img src="images/shutterisland-2010-thriller.jpg" class="img-thumbnail img-fluid" alt="">
+      <img src="images/shutterisland-2010-thriller.jpg" class="img-thumbnail img-fluid" alt="shutterisland">
       <h5>Shutter Island</h5>
       <p>2010</p>
     </div>
     <div id="toggle">
       <div class="filterDiv scifi">
-        <img src="images/starwarsempire-1980-scifi.jpg" class="img-thumbnail img-fluid" alt="">
+        <img src="images/starwarsempire-1980-scifi.jpg" class="img-thumbnail img-fluid" alt="starwarsempire">
         <h5>Star Wars Empire</h5>
         <p>1980</p>
       </div>
       <div class="filterDiv comedie">
-        <img src="images/Survivestyle5-2004-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+        <img src="images/Survivestyle5-2004-comedie.jpg" class="img-thumbnail img-fluid" alt="survivestyle5">
         <h5>Survive style 5</h5>
         <p>2004</p>
       </div>
       <div class="filterDiv comedie">
-        <img src="images/swissarmyman-2016-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+        <img src="images/swissarmyman-2016-comedie.jpg" class="img-thumbnail img-fluid" alt="swissarmyman">
         <h5>Swiss Army Man</h5>
         <p>2016</p>
       </div>
       <div class="filterDiv drame">
-        <img src="images/thefall-2006-dramatique.jpg" class="img-thumbnail img-fluid" alt="">
+        <img src="images/thefall-2006-dramatique.jpg" class="img-thumbnail img-fluid" alt="thefall">
         <h5>The Fall</h5>
         <p>2006</p>
       </div>
       <div class="filterDiv comedie">
-        <img src="images/WhatWeDoInTheShadows-2014-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+        <img src="images/WhatWeDoInTheShadows-2014-comedie.jpg" class="img-thumbnail img-fluid" alt="WhatWeDoInTheShadows">
         <h5>What We Do In The Shadows</h5>
         <p>2014</p>
       </div>
       <div class="filterDiv comedie">
-        <img src="images/zoolander-2001-comedie.jpg" class="img-thumbnail img-fluid" alt="">
+        <img src="images/zoolander-2001-comedie.jpg" class="img-thumbnail img-fluid" alt="zoolander">
         <h5>Zoolander</h5>
         <p>2001</p>
       </div>
@@ -741,7 +741,7 @@
   <button type="button" name="button" id="btn4"><a href="#" id="toggler1" onclick="changer1()">Afficher moins de films</a></button>
 
   <div class="row" id="shop-movies">
-    <div class="titre2" id="title1">
+    <div class="titre2" class="title1">
       <p>SHOP MOVIES</p>
     </div>
   </div>
@@ -752,7 +752,7 @@
       <!-- Thumbnail images -->
       <div class="row">
         <div class="column">
-          <img class="demo cursor" src="images/batmanmovie-2017-comedie.jpg" style="width:100%" onclick="currentSlide(1)" alt="Batman Movie">
+          <img class="demo cursor" src="images/batmanmovie-2017-comedie.jpg" style="width:100%" onclick="currentSlide(1)" alt="batmanmovie">
         </div>
         <div class="column">
           <img class="demo cursor" src="images/hostel-2005-thriller.jpg" style="width:100%" onclick="currentSlide(2)" alt="Hostel">
@@ -803,72 +803,72 @@
       <!-- Full-width images with number text -->
       <div class="mySlides">
         <div class="numbertext">1 / 14</div>
-        <img src="images/batmanmovie-2017-comedie.jpg" style="width:100%">
+        <img src="images/batmanmovie-2017-comedie.jpg" style="width:100%" alt="batmanmovie">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">2 / 14</div>
-        <img src="images/hostel-2005-thriller.jpg" style="width:100%">
+        <img src="images/hostel-2005-thriller.jpg" style="width:100%" alt="hostel">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">3 / 14</div>
-        <img src="images/inception-2010-scifi.jpg" style="width:100%">
+        <img src="images/inception-2010-scifi.jpg" style="width:100%" alt="inception">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">4 / 14</div>
-        <img src="images/intouchables-2011-comedie.jpg" style="width:100%">
+        <img src="images/intouchables-2011-comedie.jpg" style="width:100%" alt="intouchables">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">5 / 14</div>
-        <img src="images/lepatientanglais-1996-dramatique.jpg" style="width:100%">
+        <img src="images/lepatientanglais-1996-dramatique.jpg" style="width:100%" alt="lepatientanglais">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">6 / 14</div>
-        <img src="images/lesdeuxtours-2002-aventure.jpg" style="width:100%">
+        <img src="images/lesdeuxtours-2002-aventure.jpg" style="width:100%" alt="lesdeuxtours">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">7 / 14</div>
-        <img src="images/seven-1995-thriller.jpg" style="width:100%">
+        <img src="images/seven-1995-thriller.jpg" style="width:100%" alt="seven">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">8 / 14</div>
-        <img src="images/shutterisland-2010-thriller.jpg" style="width:100%">
+        <img src="images/shutterisland-2010-thriller.jpg" style="width:100%" alt="shutterisland">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">9 / 14</div>
-        <img src="images/starwarsempire-1980-scifi.jpg" style="width:100%">
+        <img src="images/starwarsempire-1980-scifi.jpg" style="width:100%" alt="starwarsempire">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">10 / 14</div>
-        <img src="images/Survivestyle5-2004-comedie.jpg" style="width:100%">
+        <img src="images/Survivestyle5-2004-comedie.jpg" style="width:100%" alt="survivestyle5">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">11 / 14</div>
-        <img src="images/swissarmyman-2016-comedie.jpg" style="width:100%">
+        <img src="images/swissarmyman-2016-comedie.jpg" style="width:100%" alt="swissarmyman">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">12 / 14</div>
-        <img src="images/thefall-2006-dramatique.jpg" style="width:100%">
+        <img src="images/thefall-2006-dramatique.jpg" style="width:100%" alt="thefall">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">13 / 14</div>
-        <img src="images/WhatWeDoInTheShadows-2014-comedie.jpg" style="width:100%">
+        <img src="images/WhatWeDoInTheShadows-2014-comedie.jpg" style="width:100%" alt="WhatWeDoInTheShadows">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">14 / 14</div>
-        <img src="images/zoolander-2001-comedie.jpg" style="width:100%">
+        <img src="images/zoolander-2001-comedie.jpg" style="width:100%" alt="zoolander">
       </div>
 
       <!-- Next and previous buttons -->
@@ -926,7 +926,7 @@
         <div class="row">
           <div class="col-md-12">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.233582934361!2d4.355096615485479!3d50.84535866671215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47fce0ba71d%3A0x2f634768a374d3b0!2sCantersteen+10%2C+1000+Bruxelles!5e0!3m2!1sfr!2sbe!4v1529677400530"
-              width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+              title="map" width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
     </section>
