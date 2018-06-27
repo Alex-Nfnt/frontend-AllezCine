@@ -3,41 +3,169 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-
+  <title>AllezCine</title>
   <style media="screen">
-    body {
-      margin: auto;
+    .clap {
+      text-align: center;
+      height: 350px;
     }
 
-    .navbar-brand {
-      font-size: 25px;
-      font-weight: bold;
-      margin: auto;
+    marquee {
+      background-color: black;
+      color: white;
+    }
+
+    .clap img {
+      height: 150px;
       text-align: center;
     }
+
+    .clap h1 {
+      margin-top: 35px;
+      display: inline;
+      line-height: 200%;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .clap img {
+      display: block;
+      margin: auto;
+      background-image: radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px),
+      radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 40px),
+      radial-gradient(white, #FE4240 2px, transparent 100px),
+      radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 50px);
+    }
+
+    header {
+      background-color: black;
+    }
+
+    .sortiesProch {
+      margin: auto;
+      text-align: center;
+
+    }
+
+    .sortiesProch img {
+      border: solid 5px #FE4240;
+    }
+
+    #marge {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    #description {
+      margin-top: 0px;
+      margin-bottom: 25px;
+    }
+
+    .backgroundFilms1 {
+      display: flex;
+      align-content: center;
+      margin: auto;
+    }
+
+    .backgroungFilms2 {
+      background-color: #f2f2f2;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      display: flex;
+      align-content: center;
+      margin: auto;
+    }
+
+    .film1 {
+      width: 50%;
+    }
+
+    .film2 {
+      width: 50%;
+    }
   </style>
+
 </head>
 
-<body>
-  <header>
-    <div class="01">
-      <a class="navbar-brand"><span style="color: #FE4240">ALLEZ</span>CINE</a>
-    </div>
-  </header>
-
-  <div class="titre">
-    <h2>A la une cette semaine</h2>
+<header>
+  <div class="clap">
+    <h1 style="color: #FE4240 ">Allez</h1>
+    <h1 style="color: white ">Cine </h1>
+    <img src="https://cdn4.iconfinder.com/data/icons/cinema-theater/482/cinema-environment-007-512.png" alt="clap">
+    <h1 style="color: #FE4240">Être à jour, c'est la base !</h1>
+    <h2 style=" color: white ">Newsletter</h2>
   </div>
-  <div class="container">
-    <div class="filterDiv comedie">
-      <img src="images/batmanmovie-2017-comedie.jpg" class="img-thumbnail img-fluid d-block" alt="">
-      <h5>Batman Movie</h5>
-      <p>2017</p>
+</header>
+
+<body>
+  <div class="sortiesProch">
+    <h1 style="color: #FE4240" id="marge">Nos Prochaines Sorties</h1>
+    <div class="backgroundFilms1">
+      <div class="film1">
+        <h2> Devilman Crybaby (2018) </h2>
+        <img src="https://media.senscritique.com/media/000017422833/150/Devilman_Crybaby.jpg" alt="Devilman_Crybaby">
+        <p id="description"> 30 min. Première diffusion : 5 janvier 2018. 1 saison. Fantastique, epouvante-horreur, animation et action. </p>
+      </div>
+      <div class="film2">
+        <h2>   Barons de la drogue (2018)  </h2>
+        <img src="https://media.senscritique.com/media/000017557726/150/Barons_de_la_drogue.jpg" alt="Barons_de_la_drogue">
+        <p id="description"> 45 min. Première diffusion : 19 janvier 2018. Documentaire. </p>
+      </div>
     </div>
-    <div class="promos">
-      <h2>Ne loupez pas nos promotions !</h2>
+    <div class="backgroungFilms2">
+      <div class="film1">
+        <h2>  Rotten (2018)  </h2>
+        <img src="https://media.senscritique.com/media/000017497607/150/Rotten.jpg" alt="Rotten">
+        <p id="description"> 45 min. Première diffusion : 5 janvier 2018. Documentaire. </p>
+      </div>
+      <div class="film2">
+        <h2>    Dirty Money (2018)   </h2>
+        <img src="https://media.senscritique.com/media/000017533601/150/Dirty_Money.jpg" alt="Dirty_Money">
+        <p id="description"> 1 h 05 min. Première diffusion : 26 janvier 2018. 1 saison. Policier et documentaire. </p>
+      </div>
     </div>
+    <div class="backgroundFilms1">
+      <div class="film1">
+        <h2>    Altered Carbon (2018)   </h2>
+        <img src="https://media.senscritique.com/media/000017561380/150/Altered_Carbon.jpg" alt="Altered_Carbon">
+        <p id="description"> 55 min. Première diffusion : 2 février 2018. 1 saison. Science fiction, thriller et drame. </p>
+      </div>
+      <div class="film2">
+        <h2>    Everything Sucks! (2018)  </h2>
+        <img src="https://media.senscritique.com/media/000017548229/150/Everything_Sucks.jpg" alt="Everything_Sucks">
+        <p id="description"> 25 min. Première diffusion : 16 février 2018. Comédie. </p>
+      </div>
+    </div>
+    <div class="backgroungFilms2">
+      <div class="film1">
+        <h2>    Seven Seconds (2018)   </h2>
+        <img src="https://media.senscritique.com/media/000017482498/150/Seven_Seconds.jpg" alt="Seven_Seconds">
+        <p id="description"> 1 h. Première diffusion : 23 février 2018. 1 saison. Policier et drame. </p>
+      </div>
+      <div class="film2">
+        <h2>    Wild Wild Country (2018)  </h2>
+        <img src="https://media.senscritique.com/media/000017639008/150/Wild_Wild_Country.jpg" alt="Wild_Wild_Country">
+        <p id="description"> 1 h 05 min. Première diffusion : 16 mars 2018. 1 saison. Documentaire. </p>
+      </div>
+    </div>
+    <div class="backgroundFilms1">
+      <div class="film1">
+        <h2>   Lost Song (2018)   </h2>
+        <img src="https://media.senscritique.com/media/000017694240/150/Lost_Song.jpg" alt="Lost_Song">
+        <p id="description"> 25 min. Première diffusion : 8 avril 2018. Fantastique et animation. </p>
+      </div>
+      <div class="film2">
+        <h2>    Perdus dans l'espace (2018)   </h2>
+        <img src="https://media.senscritique.com/media/000017649144/150/Perdus_dans_l_espace.jpg" alt="perdus">
+        <p id="description"> Première diffusion : 13 avril 2018. 1 saison. Science fiction, drame et action. </p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <h1 style="color: #FE4240"> Merci pour votre fidélité, à la prochaine !</h1>
+  </footer>
 </body>
 
 </html>
