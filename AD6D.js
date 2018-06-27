@@ -23,10 +23,20 @@ btn.style.backgroundImage = "url('icons/arrowUP.png')";
 btn.id = "hope";
 btn.style.height = "50px";
 btn.style.width = "50px";
-btn.style.borderRadius = "35px";
+btn.style.borderRadius = "15px";
+btn.style.borderStyle = "none";
 btn.style.position = "fixed";
 btn.style.bottom = "15px";
 btn.style.right = "15px";
+btn.style.opacity = "0.6";
+
+btn.onmouseout = function() {
+  btn.style.opacity = "0.6";
+};
+
+btn.onmouseover = function() {
+  btn.style.opacity = "1";
+};
 
 
 document.body.appendChild(btn);
