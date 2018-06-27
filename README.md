@@ -31,4 +31,5 @@ Via github page
 ## Audit
 
 ![Test Lightouse]
-<img src="./images/lighthouse-test.png"/>
+
+<img src="/images/lighthouse-test.png" alt=""/>
