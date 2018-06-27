@@ -366,7 +366,7 @@ textarea.form-control {
   overflow-y: auto;
 }
 
-.checkbox1, #checkbox2 {
+#checkbox0, #checkbox1, #checkbox2 {
   text-align: left;
 }
 
