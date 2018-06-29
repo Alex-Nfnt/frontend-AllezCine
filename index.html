@@ -1020,6 +1020,15 @@
   <!-- Charger fichier javascript du projet -->
   <script type="text/javascript" src="AD6D.js"></script>
   <script type="text/javascript" src="allezcine.js"></script>
+  <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('./service-worker.js')
+        .then(function() {
+          console.log('Service Worker Registered');
+        });
+    }
+  </script>
 
   <!-- <script src="allezcine.js"></script> -->
   <!-- Rajout Bootstrap jquery, Popper.js et javascript -->
