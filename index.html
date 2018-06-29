@@ -33,7 +33,7 @@
     <!-- Menu -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
       <a class="navbar-brand" href="#"><span style="color: #FE4240">ALLEZ</span>CINE</a>
-      <button class="navbar-toggler" name="XX" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" value="XY">
+      <button class="navbar-toggler" name="XX" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" value="XY" aria-label="hamburger">
             <span class="navbar-toggler-icon"></span>
           </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -57,8 +57,8 @@
     <div class="topnav">
       <div class="search-container">
         <form action="/action_page.php">
-          <input type="text" placeholder="Search ..." name="search">
-          <button type="submit" name="XX" value="XX"><i class="fa fa-search"></i></button>
+          <input type="text" placeholder="Search ..." name="search" aria-label="search">
+          <button type="submit" name="XX" value="XX" aria-label="search"><i class="fa fa-search"></i></button>
         </form>
       </div>
     </div>
@@ -204,10 +204,10 @@
             <div class="row">
               <div class="col-md-3 col-xs-3"></div>
               <div class="col-md-3 col-xs-3 label">
-                <label for="email">&nbsp;E-mail</label>
+                <label for="email0">&nbsp;E-mail</label>
               </div>
               <div class="col-md-3 col-xs-3">
-                <input type="text" name="email" value="" placeholder="Entrez votre e-mail">
+                <input type="text" name="email" id="email0" value="" placeholder="Entrez votre e-mail">
               </div>
             </div>
             <div class="row">
@@ -956,10 +956,10 @@
     </div>
 
     <div class="container" style="background-color:white">
-      <input type="text" placeholder="Nom" name="name" required>
-      <input type="text" placeholder="Email" name="mail" required>
+      <input type="text" placeholder="Nom" name="name" required aria-label="nom">
+      <input type="text" placeholder="Email" name="mail" required aria-label="email">
       <label>
-        <input type="checkbox" checked="checked" name="subscribe"> Newsletter hebdomadaire
+        <input type="checkbox" checked="checked" name="subscribe" aria-label="checkbox"> Newsletter hebdomadaire
       </label>
     </div>
 
@@ -983,21 +983,21 @@
             <div class="row">
               <div class="col-md-6 form-line">
                 <div class="form-group">
-                  <label for="exampleInputUsername">Nom</label>
-                  <input type="text" class="form-control" id="userName" placeholder=" Entrez votre nom">
+                  <label for="username">Nom</label>
+                  <input type="text" class="form-control" id="username" placeholder=" Entrez votre nom" arial-label="username">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail">Adresse mail</label>
-                  <input type="email" class="form-control" id="userEmail" placeholder=" Email">
+                  <label for="useremail">Adresse mail</label>
+                  <input type="email" class="form-control" id="useremail" placeholder=" Email" arial-label="useremail">
                 </div>
                 <div class="form-group">
-                  <label for="telephone">Numéro de téléphone</label>
-                  <input type="tel" class="form-control" id="userTelephone" placeholder="Num."> </div>
+                  <label for="usertelephone">Numéro de téléphone</label>
+                  <input type="tel" class="form-control" id="usertelephone" placeholder="Num." arial-label="usertelephone"> </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="description"> Message</label>
-                  <textarea class="form-control" id="userMessage" placeholder="Entrez Votre Message"></textarea>
+                  <label for="usermessage"> Message</label>
+                  <textarea class="form-control" id="usermessage" placeholder="Entrez Votre Message" arial-label="usermessage"></textarea>
                 </div>
                 <div>
                   <button type="button" class="btn btn-default submit" onclick="sendClick()"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Envoi Message</button>

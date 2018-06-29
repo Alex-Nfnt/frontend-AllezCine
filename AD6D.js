@@ -19,6 +19,7 @@ function fakya() {
 
 //  DEBUT BOUTON FLECHE VERS LE HAUT
 var btn = document.createElement("BUTTON");
+btn.setAttribute("aria-label", "hope");
 btn.style.backgroundImage = "url('icons/arrowUP.png')";
 btn.id = "hope";
 btn.style.height = "50px";
