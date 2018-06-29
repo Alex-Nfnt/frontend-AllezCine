@@ -24,7 +24,7 @@ btn.style.backgroundImage = "url('icons/arrowUP.png')";
 btn.id = "hope";
 btn.style.height = "50px";
 btn.style.width = "50px";
-btn.style.borderRadius = "15px";
+btn.style.borderRadius = "25px";
 btn.style.borderStyle = "none";
 btn.style.position = "fixed";
 btn.style.bottom = "15px";
@@ -63,8 +63,18 @@ function scrollFunction() {
 //
 function sendClick() {
   var name = document.getElementById("userName").value;
+  var prenom = document.getElementById("userPrenom").value;
   var email = document.getElementById("userEmail").value;
-  var tel = document.getElementById("userTelephone").value;
+  var sujet = document.getElementById("userSujet").value;
   var message = document.getElementById("userMessage").value;
-  alert("Bonjour,  " + name + "\n\nVotre email est :  " + email + "\n\nVotre numéro de téléphone est :  " + tel + "\n\nEt votre message est le suivant :  " + message);
+  alert("Bonjour,  " + name + " " + prenom + "\n\nVotre email est :  " + email + "\n\nSujet :  " + sujet + "\n\nEt votre message est le suivant :  " + message);
+  resetChamps();
 };
+
+function resetChamps() {
+  document.getElementById("resetForm").reset();
+}
+
+function newsletter() {
+  window.location.href = './newsletter.html';
+}

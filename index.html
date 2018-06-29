@@ -22,6 +22,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="icons/favicon.png" type="image/png" sizes="16x16">
 
 
 </head>
@@ -48,7 +49,7 @@
             <a class="nav-link" class="onmouseover()" href="#shop-movies" target="_self" title="Shop movies">Shop movies</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" class="onmouseover()" href="#contactus" target="_self" title="Contact us">Contact us</a>
+            <a class="nav-link" class="onmouseover()" href="#contact" target="_self" title="Contact us">Contact us</a>
           </li>
         </ul>
       </div>
@@ -948,72 +949,47 @@
     </div>
   </div>
 
-
-  <form action="/action_page.php" id="newsletter">
-    <div class="container">
-      <h2>S'inscrire à notre Newsletter</h2>
-      <p>Car être à jour, c'est la base !</p>
+  <div class="row" id="contact">
+    <div class="col-lg-12 col-xs-12 title1">
+      <p>Contact</p>
     </div>
-
-    <div class="container" style="background-color:white">
-      <input type="text" placeholder="Nom" name="name" required aria-label="nom">
-      <input type="text" placeholder="Email" name="mail" required aria-label="email">
-      <label>
-        <input type="checkbox" checked="checked" name="subscribe" aria-label="checkbox"> Newsletter hebdomadaire
-      </label>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form class="contact" action="index.html" method="post" id="resetForm">
+          <label for="nom">Nom</label>
+          <input type="text" name="nom" placeholder="Nom" id="userName">
+          <label for="prénom">Prénom</label>
+          <input type="text" name="nom" placeholder="Prénom" id="userPrenom">
+          <label for="email">Email</label>
+          <input type="text" name="nom" placeholder="exemple@gmail.com" id="userEmail">
+          <br>
+          <label for="sujet">Sujet</label>
+          <input type="text" name="nom" placeholder="Sujet" id="userSujet">
+          <br>
+          <label for="message">Message</label>
+          <br>
+          <textarea name="message" rows="8" cols="80" placeholder="Message" style="height:150px" id="userMessage"></textarea>
+          <button id="contact" type="button" class="btn submit" onclick="sendClick()"><i class="fa fa-paper-plane" aria-hidden="true"></i> Envoi Message</button>
+        </form>
+      </div>
     </div>
-
-    <div class="container">
-      <input type="submit" value="S'inscrire">
-    </div>
-  </form>
+  </div>
 
 
 
   <footer>
-    <!-- CONTACT -->
-    <section id="contact">
-      <div class="section-content" id="contactus">
-        <h1 class="section-header">Ecrivez <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> nous</span></h1>
-        <h3>Nous sommes à votre écoute</h3>
-      </div>
-      <div class="contact-section">
-        <div class="container">
-          <form>
-            <div class="row">
-              <div class="col-md-6 form-line">
-                <div class="form-group">
-                  <label for="username">Nom</label>
-                  <input type="text" class="form-control" id="username" placeholder=" Entrez votre nom" arial-label="username">
-                </div>
-                <div class="form-group">
-                  <label for="useremail">Adresse mail</label>
-                  <input type="email" class="form-control" id="useremail" placeholder=" Email" arial-label="useremail">
-                </div>
-                <div class="form-group">
-                  <label for="usertelephone">Numéro de téléphone</label>
-                  <input type="tel" class="form-control" id="usertelephone" placeholder="Num." arial-label="usertelephone"> </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="usermessage"> Message</label>
-                  <textarea class="form-control" id="usermessage" placeholder="Entrez Votre Message" arial-label="usermessage"></textarea>
-                </div>
-                <div>
-                  <button type="button" class="btn btn-default submit" onclick="sendClick()"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Envoi Message</button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.233582934361!2d4.355096615485479!3d50.84535866671215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47fce0ba71d%3A0x2f634768a374d3b0!2sCantersteen+10%2C+1000+Bruxelles!5e0!3m2!1sfr!2sbe!4v1529677400530"
-              title="map" width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-        </div>
-    </section>
-    <!-- CONTACT FIN -->
+
+    <form class="newsletter" action="index.html" method="post">
+      <label for="Newsletter">Inscrivez-vous à notre Newsletter !</label>
+      <br>
+      <input type="text" name="nom" placeholder="exemple@gmail.com" id="userEmailNews">
+      <button type="button" onclick="newsletter()" class="michou">M'inscrire</button>
+    </form>
+
+    <a class="navbar-brand"><span style="color: #FE4240">ALLEZ</span>CINE</a>
+
 
   </footer>
 
