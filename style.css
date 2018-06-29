@@ -97,8 +97,6 @@ ul, li, a {
   color: white;
 }
 
-/* FIN : ALERT COOCKIES */
-
 /* DEBUT : ICONES SOCIAUX */
 
 .twitter {
@@ -225,8 +223,6 @@ ul, li, a {
   transform: translateX(100px);
 }
 
-/* FIN : ICONES SOCIAUX */
-
 /*TITRES */
 
 .title1 {
@@ -281,76 +277,6 @@ ul, li, a {
 .genres {
   width: 50%;
   float: right;
-}
-
-/* CONTACT */
-
-iframe {
-  margin-top: 5px;
-  margin-right: auto;
-  margin-left: auto;
-  width: : 100%;
-  display: block;
-}
-
-.section-content {
-  text-align: center;
-}
-
-#contact {
-  margin-top: 50px;
-  font-family: 'Teko', sans-serif;
-  padding-top: 60px;
-  width: 100%;
-  height: 700px;
-  background: #f4a742;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #f4a742, #FE4240);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #f4a742, #FE4240);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #fff;
-}
-
-.contact-section {
-  padding-top: 40px;
-}
-
-.contact-section .col-md-6 {
-  width: 50%;
-}
-
-.form-line {
-  border-right: 1px solid #B29999;
-}
-
-.form-group {
-  margin-top: 10px;
-}
-
-label {
-  font-size: 1.3em;
-  line-height: 1em;
-  font-weight: normal;
-}
-
-.form-control {
-  font-size: 1.3em;
-  color: #080808;
-}
-
-textarea.form-control {
-  height: 100px;
-  /* margin-top: px;*/
-}
-
-.submit {
-  font-size: 1.1em;
-  float: left;
-  width: 200px;
-  background-color: transparent;
-  border-radius: 35px;
-  color: #fff;
 }
 
 /* Login/register */
@@ -568,8 +494,6 @@ a {
   color: #FE4240;
 }
 
-/* ++++++++++++++++++++++ */
-
 /* shop movie */
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -674,4 +598,42 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 75%;
+}
+
+/*CONTACT  */
+
+.contact {
+  margin: auto;
+}
+
+.contact label {
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.contact input, textarea {
+  border: solid 2px black;
+  border-radius: 15px;
+  width: auto;
+  text-align: center;
+}
+
+form #contact {
+  margin-left: 25px;
+  margin-bottom: 150px;
+  margin-top: 25px;
+}
+
+/* footer */
+
+footer {
+  background-color: black;
+  margin: auto;
+  text-align: center;
+}
+
+footer label {
+  color: white;
+  padding-top: 25px;
 }
